@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:38812",
+      "sslPort": 44388
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5266",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OPENWEATHER_API_KEY": "991c85b25ad89b6c8c625f489671fa37"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7140;http://localhost:5266",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OPENWEATHER_API_KEY": "991c85b25ad89b6c8c625f489671fa37"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OPENWEATHER_API_KEY": "991c85b25ad89b6c8c625f489671fa37"
+      }
+    }
+  }
+}
