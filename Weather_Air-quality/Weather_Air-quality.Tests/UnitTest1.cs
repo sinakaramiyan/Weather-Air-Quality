@@ -23,7 +23,7 @@ public class OpenWeatherServiceTests : IDisposable
         _httpClient = new HttpClient(_httpMessageHandlerMock.Object);
         _config = new OpenWeatherConfig 
         { 
-            ApiKey = "991c85b25ad89b6c8c625f489671fa37",
+            ApiKey = "YOUR_ACTUAL_API_KEY_HERE",
             BaseUrl = "https://api.openweathermap.org/data/2.5" 
         };
         _loggerMock = new Mock<ILogger<OpenWeatherService>>();
