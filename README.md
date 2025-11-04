@@ -58,13 +58,13 @@ The solution is a **clean, testable, and scalable** ASP.NET Core Web API built o
 
 ## 5. API Usage
 **Running the Application** 
-    1. Clone the repository. 
-    2. Add your **OpenWeatherMap API key** to the 
+    1.  Clone the repository. 
+    2.  Add your **OpenWeatherMap API key** to the 
         `launchSettings.json` file: 
         Change your api key with "YOUR_ACTUAL_API_KEY_HERE"
-    3. Run the following command in the project root directory: 
+    3.  Run the following command in the project root directory: 
         ```bash dotnet run ``` 
-    4. The API will start.
+    4.  The API will start.
         - **Swagger UI** will be available at: [https://localhost:5266/swagger](https://localhost:7076/swagger) for easy testing.
         - **Graphical UI** will be availabe at: [https://localhost:5266/]
         - **Bsic API** will be availabe at: [https://localhost:5266/weather/{city_name}]
