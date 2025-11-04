@@ -77,9 +77,9 @@ public class OpenWeatherServiceTests : IDisposable
             }
         };
 
-        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?q=tehran&appid=991c85b25ad89b6c8c625f489671fa37", coordinatesResponse);
-        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?lat=35.6944&lon=51.4215&appid=991c85b25ad89b6c8c625f489671fa37&units=metric", weatherResponse);
-        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/air_pollution?lat=35.6944&lon=51.4215&appid=991c85b25ad89b6c8c625f489671fa37", pollutionResponse);
+        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?q=tehran&appid={_config.ApiKey}", coordinatesResponse);
+        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?lat=35.6944&lon=51.4215&appid={_config.ApiKey}&units=metric", weatherResponse);
+        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/air_pollution?lat=35.6944&lon=51.4215&appid={_config.ApiKey}", pollutionResponse);
 
         // Act
         var result = await _service.GetWeatherAndAirQualityAsync(city);
@@ -132,7 +132,7 @@ public class OpenWeatherServiceTests : IDisposable
             Coord = new Coordinates { Lat = 48.8566, Lon = 2.3522 }
         };
 
-        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=991c85b25ad89b6c8c625f489671fa37", expectedCoordinates);
+        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={_config.ApiKey}", expectedCoordinates);
 
         // Act
         var result = await _service.GetCityCoordinatesAsync(city);
@@ -159,7 +159,7 @@ public class OpenWeatherServiceTests : IDisposable
             }
         };
 
-        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=991c85b25ad89b6c8c625f489671fa37&units=metric", expectedWeather);
+        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={_config.ApiKey}&units=metric", expectedWeather);
 
         // Act
         var result = await _service.GetWeatherDataAsync(lat, lon);
@@ -193,7 +193,7 @@ public class OpenWeatherServiceTests : IDisposable
             }
         };
 
-        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid=991c85b25ad89b6c8c625f489671fa37", expectedPollution);
+        SetupHttpResponse($"https://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={_config.ApiKey}", expectedPollution);
 
         // Act
         var result = await _service.GetAirPollutionDataAsync(lat, lon);
