@@ -17,7 +17,7 @@
       "applicationUrl": "http://localhost:5266",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "OPENWEATHER_API_KEY": "991c85b25ad89b6c8c625f489671fa37"
+        "OPENWEATHER_API_KEY": "YOUR_ACTUAL_API_KEY_HERE"
       }
     },
     "https": {
@@ -28,7 +28,7 @@
       "applicationUrl": "https://localhost:7140;http://localhost:5266",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "OPENWEATHER_API_KEY": "991c85b25ad89b6c8c625f489671fa37"
+        "OPENWEATHER_API_KEY": "YOUR_ACTUAL_API_KEY_HERE"
       }
     },
     "IIS Express": {
@@ -37,7 +37,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "OPENWEATHER_API_KEY": "991c85b25ad89b6c8c625f489671fa37"
+        "OPENWEATHER_API_KEY": "YOUR_ACTUAL_API_KEY_HERE"
       }
     }
   }
