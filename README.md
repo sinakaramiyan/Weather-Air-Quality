@@ -68,3 +68,8 @@ The solution is a **clean, testable, and scalable** ASP.NET Core Web API built o
         - **Swagger UI** will be available at: [https://localhost:5266/swagger](https://localhost:7076/swagger) for easy testing.<br>
         - **Graphical UI** will be availabe at: [https://localhost:5266/]<br>
         - **Bsic API** will be availabe at: [https://localhost:5266/weather/{city_name}]<br>
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
