@@ -5,7 +5,6 @@
 This document provides an overview of the **.NET Core Web API** developed for the technical assessment. The API fulfills the user story of retrieving comprehensive environmental data for a given city, including **weather conditions** and **air quality information**, by integrating with the **OpenWeatherMap API**.
 
 <img width="1191" height="843" alt="weather_project_run_image" src="https://github.com/user-attachments/assets/787bf627-c7ce-47b0-887e-a0256fc87d82" />
----
 
 ## 2. Project Overview
 
